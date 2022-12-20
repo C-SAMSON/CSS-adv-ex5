@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-color: beige;
     display: grid;
     grid-template:
         "h h h h"
@@ -8,109 +7,112 @@ body {
         "b1 b2 b3 b4"
         "c1 c2 c3 c4"    
         "d1 d2 d3 d4";
-    grid-template-rows: 100px 320px 100px 320px 100px;        
+    grid-template-rows: 100px 320px 100px 320px 100px;  
+    width: 100vw;
+    height: 100vh;      
 }
 
 header {
     margin: 0;
+    border-bottom: solid gray 1px;
     grid-area: h;
     background-color: white;
 }
 
 .a1 {
-    margin: 10px;
+    margin: 5px;
     margin-bottom: 0;
     grid-area: a1;
     background-color: gray;
 }
 .a2 {
-    margin: 10px;
+    margin: 5px;
     margin-bottom: 0;
     grid-area: a2;
     background-color: gray;
 }
 .a3 {
-    margin: 10px;
+    margin: 5px;
     margin-bottom: 0;
     grid-area: a3;
     background-color: gray;
 }
 .a4 {
-    margin: 10px;
+    margin: 5px;
     margin-bottom: 0;
     grid-area: a4;
     background-color: gray;
 }
 
 .b1 {
-    margin: 10px;
+    margin: 5px;
     margin-top: 0;
     grid-area: b1;
     background-color: lightgray;
 }
 .b2 {
-    margin: 10px;
+    margin: 5px;
     margin-top: 0;
     grid-area: b2;
     background-color: lightgray;
 }
 .b3 {
-    margin: 10px;
+    margin: 5px;
     margin-top: 0;
     grid-area: b3;
     background-color: lightgray;
 }
 .b4 {
-    margin: 10px;
+    margin: 5px;
     margin-top: 0;
     grid-area: b4;
     background-color: lightgray;
 }
 .c1 {
-    margin: 10px;
+    margin: 5px;
     margin-bottom: 0;
     grid-area: c1;
     background-color: gray;
 }
 .c2 {
-    margin: 10px;
+    margin: 5px;
     margin-bottom: 0;
     grid-area: c2;
     background-color: gray;
 }
 .c3 {
-    margin: 10px;
+    margin: 5px;
     margin-bottom: 0;
     grid-area: c3;
     background-color: gray;
 }
 .c4 {
-    margin: 10px;
+    margin: 5px;
     margin-bottom: 0;
     grid-area: c4;
     background-color: gray;
 }
 
 .d1 {
-    margin: 10px;
+    margin: 5px;
     margin-top: 0;
     grid-area: d1;
     background-color: lightgray;
 }
 .d2 {
-    margin: 10px;
+    margin: 5px;
     margin-top: 0;
     grid-area: d2;
     background-color: lightgray;
 }
 .d3 {
-    margin: 10px;
+    margin: 5px;
     margin-top: 0;
     grid-area: d3;
     background-color: lightgray;
 }
 .d4 {
-    margin: 10px;
+    margin: 5px;
     margin-top: 0;
     grid-area: d4;
     background-color: lightgray;
