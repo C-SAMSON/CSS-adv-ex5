@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: beige;
+    display: grid;
+    grid-template:
+        "h h"
+        "m a1"
+        "m a2"
+        "f f";
+    grid-template-rows: 1fr 4fr 4fr 1fr;        
+}
+
+header {
+    margin: 0;
+    grid-area: h;
+    background-color: white;
+}
+
+.a1 {
+    grid-area: a1;
+    background-color: lightgrey;
+}
+
+.a2 {
+    grid-area: a2;
+    background-color: gray;
+}
+
+main {
+    grid-area: m;
+    background-color: darkgray;
+}
+
+footer {
+    grid-area: f;
+    background-color: lightgrey;
+}
