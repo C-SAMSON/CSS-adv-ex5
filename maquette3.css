@@ -1,29 +1,23 @@
-body {
+* {
     margin: 0;
     padding: 5px;
+}
+
+body {
     display: grid;
     grid-template:
         "a1 h a2"
-        "a1 l1 a2"
-        "a1 l2 a2"
-        "a1 l3 a2"
-        "a1 l4 a2"
-        "a1 l5 a2"
-        "a1 l6 a2"
-        "a1 l7 a2"
-        "a1 l8 a2"
-        "a1 l9 a2"
-        "a1 l10 a2";
-    grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;        
+        "a1 ul a2";
+    grid-template-columns: 2fr 4fr 2fr;     
     width: 100vw;
     height: 100vh;
-    border: solid gray 1px;     
 }
 
 header {
     padding: 5px;
     grid-area: h;
     background-color: darkgray;
+    height: 19vh;
 }
 
 .a1 {
@@ -39,37 +33,12 @@ header {
 }
 
 ul {
+    grid-area: ul;
     list-style-type: none;
+    height: 80vh;
 }
-.l1 {
-    padding: 5px;
-    grid-area: l1;
-}
-.l2 {
-    padding: 5px;
-    grid-area: l2;
-}
-.l3 {
-    grid-area: l3;
-}
-.l4 {
-    grid-area: l4;
-}
-.l5 {
-    grid-area: l5;
-}
-.l6 {
-    grid-area: l6;
-}
-.l7 {
-    grid-area: l7;
-}
-.l8 {
-    grid-area: l8;
-}
-.l9 {
-    grid-area: l9;
-}
-.l10 {
-    grid-area: l10;
+
+li {
+    border: solid grey 1px;
+    height: 6.3vh;
 }
