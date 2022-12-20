@@ -1,40 +1,75 @@
 body {
     margin: 0;
+    padding: 5px;
     display: grid;
-    background-color: black;
     grid-template:
-        "h h"
-        "m a1"
-        "m a2"
-        "f f";
-    grid-template-rows: 1.5fr 5fr 5fr 2fr;        
-
+        "a1 h a2"
+        "a1 l1 a2"
+        "a1 l2 a2"
+        "a1 l3 a2"
+        "a1 l4 a2"
+        "a1 l5 a2"
+        "a1 l6 a2"
+        "a1 l7 a2"
+        "a1 l8 a2"
+        "a1 l9 a2"
+        "a1 l10 a2";
+    grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;        
     width: 100vw;
-    height: 100vh;       
+    height: 100vh;
+    border: solid gray 1px;     
 }
 
 header {
-    margin: 0;
+    padding: 5px;
     grid-area: h;
-    background-color: white;
-}
-
-.a1 {
-    grid-area: a1;
-    background-color: lightgrey;
-}
-
-.a2 {
-    grid-area: a2;
-    background-color: gray;
-}
-
-main {
-    grid-area: m;
     background-color: darkgray;
 }
 
-footer {
-    grid-area: f;
-    background-color: lightgrey;
+.a1 {
+    padding: 5px;
+    grid-area: a1;
+    background-color: grey;
+}
+
+.a2 {
+    padding: 5px;
+    grid-area: a2;
+    background-color: grey;
+}
+
+ul {
+    list-style-type: none;
+}
+.l1 {
+    padding: 5px;
+    grid-area: l1;
+}
+.l2 {
+    padding: 5px;
+    grid-area: l2;
+}
+.l3 {
+    grid-area: l3;
+}
+.l4 {
+    grid-area: l4;
+}
+.l5 {
+    grid-area: l5;
+}
+.l6 {
+    grid-area: l6;
+}
+.l7 {
+    grid-area: l7;
+}
+.l8 {
+    grid-area: l8;
+}
+.l9 {
+    grid-area: l9;
+}
+.l10 {
+    grid-area: l10;
 }
