@@ -1,13 +1,16 @@
 body {
     margin: 0;
-    background-color: beige;
     display: grid;
+    background-color: black;
     grid-template:
         "h h"
         "m a1"
         "m a2"
         "f f";
-    grid-template-rows: 1fr 4fr 4fr 1fr;        
+    grid-template-rows: 1.5fr 5fr 5fr 2fr;        
+
+    width: 100vw;
+    height: 100vh;       
 }
 
 header {
