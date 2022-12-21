@@ -1,23 +1,17 @@
 * {
+    box-sizing: border-box;
     margin: 0;
-    padding: 5px;
+    padding: 2px;
 }
 
 body {
     display: grid;
     grid-template:
-        "a1 h a2"
         "a1 ul a2";
-    grid-template-columns: 2fr 4fr 2fr;     
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-gap: 2px;    
     width: 100vw;
     height: 100vh;
-}
-
-header {
-    padding: 5px;
-    grid-area: h;
-    background-color: darkgray;
-    height: 19vh;
 }
 
 .a1 {
@@ -35,10 +29,20 @@ header {
 ul {
     grid-area: ul;
     list-style-type: none;
-    height: 80vh;
+    height: 100vh;
 }
 
 li {
     border: solid grey 1px;
-    height: 6.3vh;
+    height: 8vh;
+}
+
+.header {
+    height: 16vh;
+}
+
+.header p {
+    background-color: darkgray;
+    margin: 2px;
+    height: 14vh;
 }
