@@ -1,48 +1,102 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 2px;
+@media screen and (min-width: 600px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 2px;
+    }
+
+    body {
+        display: grid;
+        grid-template:
+            "a1 ul a2";
+        grid-template-columns: 2fr 4fr 2fr;
+        grid-gap: 2px;    
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .a1 {
+        padding: 5px;
+        grid-area: a1;
+        background-color: grey;
+    }
+
+    .a2 {
+        padding: 5px;
+        grid-area: a2;
+        background-color: grey;
+    }
+
+    ul {
+        grid-area: ul;
+        list-style-type: none;
+        height: 100vh;
+    }
+
+    li {
+        border: solid grey 1px;
+        height: 8vh;
+    }
+
+    .header {
+        height: 16vh;
+    }
+
+    .header p {
+        background-color: darkgray;
+        margin: 2px;
+        height: 14vh;
+    }
 }
 
-body {
-    display: grid;
-    grid-template:
-        "a1 ul a2";
-    grid-template-columns: 2fr 4fr 2fr;
-    grid-gap: 2px;    
-    width: 100vw;
-    height: 100vh;
-}
+@media screen and (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 2px;
+    }
 
-.a1 {
-    padding: 5px;
-    grid-area: a1;
-    background-color: grey;
-}
+    /* body {
+        display: grid;
+        grid-template:
+            "ul";
+        grid-template-columns: 100vw;
+        grid-gap: 2px;    
+        width: 100vw;
+        height: 100vh;
+    }
 
-.a2 {
-    padding: 5px;
-    grid-area: a2;
-    background-color: grey;
-}
+    .a1 {
+        padding: 5px;
+        grid-area: a1;
+        background-color: grey;
+    }
 
-ul {
-    grid-area: ul;
-    list-style-type: none;
-    height: 100vh;
-}
+    .a2 {
+        padding: 5px;
+        grid-area: a2;
+        background-color: grey;
+    } */
 
-li {
-    border: solid grey 1px;
-    height: 8vh;
-}
+    ul {
+        /* grid-area: ul; */
+        list-style-type: none;
+        height: 100vh;
+        width: 100%;
+    }
 
-.header {
-    height: 16vh;
-}
+    li {
+        border: solid grey 1px;
+        height: 8vh;
+    }
 
-.header p {
-    background-color: darkgray;
-    margin: 2px;
-    height: 14vh;
+    .header {
+        height: 16vh;
+    }
+
+    .header p {
+        background-color: darkgray;
+        margin: 2px;
+        height: 14vh;
+    }
 }
