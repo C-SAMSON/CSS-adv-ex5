@@ -1,40 +1,91 @@
-body {
-    margin: 0;
-    display: grid;
-    background-color: black;
-    grid-template:
-        "h h"
-        "m a1"
-        "m a2"
-        "f f";
-    grid-template-rows: 1.5fr 5fr 5fr 2fr;        
+@media screen and (min-width: 600px) {
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        display: grid;
+        background-color: black;
+        grid-template:
+            "h h"
+            "m a1"
+            "m a2"
+            "f f";
+        grid-template-rows: 1.5fr 5fr 5fr 2fr;        
+        width: 100vw;
+        height: 100vh;       
+    }
 
-    width: 100vw;
-    height: 100vh;       
+    header {
+        margin: 0;
+        grid-area: h;
+        background-color: white;
+    }
+
+    .a1 {
+        grid-area: a1;
+        background-color: lightgrey;
+    }
+
+    .a2 {
+        grid-area: a2;
+        background-color: gray;
+    }
+
+    main {
+        grid-area: m;
+        background-color: darkgray;
+    }
+
+    footer {
+        grid-area: f;
+        background-color: lightgrey;
+    }
 }
 
-header {
-    margin: 0;
-    grid-area: h;
-    background-color: white;
-}
+@media screen and (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+    }
 
-.a1 {
-    grid-area: a1;
-    background-color: lightgrey;
-}
+    body {
+        margin: 0;
+        display: grid;
+        background-color: black;
+        grid-template:
+            "h"
+            "m"
+            "a1"
+            "a2"
+            "f";
+        grid-template-rows: 1.5fr 5fr 5fr 2fr 0fr;        
+        width: 100vw;
+        height: 100vh;       
+    }
 
-.a2 {
-    grid-area: a2;
-    background-color: gray;
-}
+    header {
+        margin: 0;
+        grid-area: h;
+        background-color: white;
+    }
 
-main {
-    grid-area: m;
-    background-color: darkgray;
-}
+    .a1 {
+        grid-area: a1;
+        background-color: lightgrey;
+    }
 
-footer {
-    grid-area: f;
-    background-color: lightgrey;
+    .a2 {
+        grid-area: a2;
+        background-color: gray;
+    }
+
+    main {
+        grid-area: m;
+        background-color: darkgray;
+    }
+
+    footer {
+        grid-area: f;
+        background-color: lightgrey;
+    }
 }
